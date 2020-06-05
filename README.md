@@ -1,2 +1,3 @@
-# terraform-labs
-Configuration files to share my Terraform know-hows
+# my-terraform-labs
+
+This repository aims that share my Terraform know-hows with others. More details are coming...
