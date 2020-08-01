@@ -1,0 +1,14 @@
+As an example, after the run "terraform init" command, we can:
+
+
+*** Create Terraform plan with:
+
+    terraform plan -out=tfplan -var 'container_name=blog' -var 'image=ghost:alpine' -var 'int_port=2368' -var 'ext_port=80'
+
+*** Apply this plan:
+
+    terraform apply -auto-approve tfplan
+
+*** Destroy resources:
+
+    terraform destroy -auto-approve 'container_name=blog' -var 'image=ghost:alpine' -var 'int_port=2368' -var 'ext_port=80'

@@ -1,0 +1,14 @@
+As an example, after the run "terraform init" command, we can:
+
+
+*** Create Terraform plan with:
+
+    terraform plan -out=tfplan
+
+*** Apply this plan:
+
+    terraform apply tfplan
+
+*** Destroy resources:
+
+    terraform destroy -auto-approve
