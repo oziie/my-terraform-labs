@@ -1,0 +1,15 @@
+--> Initialize Terraform:
+
+    terraform init
+
+--> Validate files:
+
+    terraform validate
+
+--> Build a plan:
+
+    terraform plan -out=tfplan -var 'ext_port=8082'
+
+--> Apply the plan:
+
+    terraform apply tfplan
