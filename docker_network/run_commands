@@ -13,3 +13,7 @@
 --> Apply the plan:
 
     terraform apply tfplan
+
+--> You can destroy resources:
+
+    terraform destroy -auto-approve -var 'ext_port=8082'
