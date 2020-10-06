@@ -14,6 +14,7 @@ volumes {
   }
 }
 
+
 #### The reason of why we need add this "null resource" is, to have MySQL container as UP right before the be operational "Ghost Blog" container.Ghost Blog depends on MySQL.
 #### Otherwise, ghost blog will not start.
 
