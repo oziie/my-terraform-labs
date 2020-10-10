@@ -46,7 +46,9 @@ resource "docker_service" "mysql-service" {
       }
 
 ### We need to use “mounts” rather than “volumes” when use Docker Swarm services.
-### In the “mounts” --> “type”, we have 3 option to use: bind, volume, tmpfs
+### In the “mounts” --> “type”, we have 3 option to use: bind, volume, tmpfs.
+
+### If you need another, just use a comma and another set of curly braces.
       mounts = [
         {
           target = "/var/lib/mysql"
